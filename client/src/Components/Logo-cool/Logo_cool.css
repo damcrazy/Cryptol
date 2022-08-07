@@ -1,0 +1,22 @@
+.container{
+    position: relative;
+    display: grid;
+}
+
+.circle {
+    width: 5%;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    background-color: brown;
+
+}
+
+.circle:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.circle:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+}
