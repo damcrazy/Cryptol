@@ -6,28 +6,40 @@ import Button from "react-bootstrap/Button";
 import "./Navbar.css";
 function MainNavbar() {
   let user = 0;
-const loginStyle = {
-  marginTop: "10px",
-  border: "0",
-  backgroundColor: "#791cf8",
-  paddingLeft: "20px",
-  paddingRight: "20px",
-  paddingTop: "5px",
-  paddingBottom: "5px",
-}
+  const loginStyle = {
+    marginTop: "10px",
+    border: "0",
+    backgroundColor: "#791cf8",
+    paddingLeft: "20px",
+    paddingRight: "20px",
+    paddingTop: "5px",
+    paddingBottom: "5px",
+  }
+  // const navstyle = {
+  //   position: "relative"
+  // }
 
 
   return (
     <>
+        <style type="text/css">
+    {`
+.btn-flat {
+  background-color: purple;
+  color: white;
+}
+`}
+  </style>
+  <div className="outer-container">
       <Navbar bg="" variant="dark" expand="lg">
-        <Container>
+        <Container className="Container-nav">
           <Navbar.Brand href="#home">
             <img
               alt="Logo"
               src="/images/Logo.svg"
               width="30"
               height="30"
-              className="d-inline-block align-top"
+              className="d-inline-block align-top logo-nav"
             />{" "}
             Cryptol
           </Navbar.Brand>
@@ -72,6 +84,7 @@ const loginStyle = {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      </div>
     </>
   );
 }

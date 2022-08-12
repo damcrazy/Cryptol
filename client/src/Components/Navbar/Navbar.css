@@ -1,7 +1,8 @@
 .Navbar {
-  /* height:12vh; */
+  z-index: 1;
   padding: 2vh;
   padding-bottom: 2vh;
+  min-width: 100%;
 }
 
 button {
@@ -44,4 +45,10 @@ button:hover {
   }
   button.outline:active {
     border-radius: 22px;
+  }
+
+
+
+  .Container-nav{
+    z-index: 1;
   }
